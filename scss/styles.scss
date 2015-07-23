@@ -4,5 +4,28 @@
 @import "base/grid-settings";
 @import "lib/neat/neat";
 @import "base/base";
+
+/***** Custom Mixins *****/
+@import "base/mixins";
+
 /***** Custom Layout Styles *****/
 @import "layout";
+
+/************ General Page Elements */
+.row-wrapper {
+  @include row();
+
+  .outer-container {
+    @include outer-container;
+  }
+}
+
+nav {
+  display: inline-block;
+
+li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+}
+}

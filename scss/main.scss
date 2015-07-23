@@ -1,7 +1,1 @@
 
-
-.wrapper {
-  @include outer-container;
-  aside { @include span-columns(3); }
-  main { @include span-columns(9); }
-}

@@ -2,126 +2,243 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
   <title>Etsy Search Page- Nashville</title>
 </head>
 <body>
-  <header>
-
-  </header>
-  <div class="wrapper">
   <div class="row-wrapper">
     <div class="outer-container">
+      <header>
+        <img id="logo" src="https://www.etsy.com/assets/dist/images/etsylogo.20150626221852.png" alt="" />
+        <input type="text" id="search" name="name" value="nashville">
+        <button type="button" class="btn search" name="button">Search</button>
+        <nav class="nav">
+          <ul>
+            <li>Home</li>
+            <li>Favorites</li>
+            <li>You</li>
+            <li>Cart</li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </div>
+  <div class="row-wrapper">
+    <div class="outer-container">
+      <div class="content">
 
-    <aside class="sidebar">
-      <h5>Show results for:</h5>
-      <div class="catagories">
-        <h5><a href="#">All categories</a></h5>
-        <ul>
-          <li><a href="#">Art &amp; Collectibles</a></li>
-          <li><a href="#">Clothing</a></li>
-          <li><a href="#">Jewelry</a></li>
-          <li><a href="#">Home &amp; Living</a></li>
-          <li><a href="#">Accessories</a></li>
-          <li><a href="#">Books, Movies &amp; Music</a></li>
-          <li><a href="#">Paper &amp; Paper Supplies</a></li>
-          <li><a href="#">Weddings</a></li>
-          <li><a href="#">Bags &amp; Purses</a></li>
-          <li><a href="#">Craft Supplies &amp; Tools</a></li>
-          <li><a href="#">Bath &amp; Beauty</a></li>
-          <li><a href="#">Electronics &amp; Accessories</a></li>
-          <li><a href="#">Shoes</a></li>
-          <li><a href="#">Toys &amp; Games</a></li>
-        </ul>
+        <aside class="sidebar">
+          <h5>Show results for:</h5>
+          <div class="catagories">
+            <h5><a href="#">All categories</a></h5>
+            <ul>
+              <li><a href="#">Art &amp; Collectibles</a></li>
+              <li><a href="#">Clothing</a></li>
+              <li><a href="#">Jewelry</a></li>
+              <li><a href="#">Home &amp; Living</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Books, Movies &amp; Music</a></li>
+              <li><a href="#">Paper &amp; Paper Supplies</a></li>
+              <li><a href="#">Weddings</a></li>
+              <li><a href="#">Bags &amp; Purses</a></li>
+              <li><a href="#">Craft Supplies &amp; Tools</a></li>
+              <li><a href="#">Bath &amp; Beauty</a></li>
+              <li><a href="#">Electronics &amp; Accessories</a></li>
+              <li><a href="#">Shoes</a></li>
+              <li><a href="#">Toys &amp; Games</a></li>
+            </ul>
+          </div>
+          <div class="refineSrch">
+            <h5>Refine your search</h5>
+              <input type="radio" name="item_type" checked="checked">
+              <a href="#">All Items</a>
+              <input type="radio" name="item_type">
+              <a href="#">Handmade</a>
+              <input type="radio" name="item_type">
+              <a href="#">Vintage</a>
+            </ul>
+            <h5>Price</h5>
+              <input type="text" placeholder="Low">
+              <p> to </p>
+              <input type="text" placeholder="High">
+              <button></button>
+            <h5>Filter by Color</h5>
+            <ul>
+              <li>
+                <a href="#" title="red" style="background-color: #f40b32;">
+                  &nbsp;
+                </a>
+              </li>
+              <li>
+                <a href="#" title="orange" style="background-color: #ff7f00;">
+                  &nbsp;
+                </a>
+              </li>
+              <li>
+                <a href="#" title="yellow" style="background-color: #f3cc0c;">
+                  &nbsp;
+                </a>
+              </li>
+              <li>
+                <a href="#" title="green" style="background-color: #0ac20a;">
+                  &nbsp;
+                </a>
+              </li>
+              <li>
+                <a href="#" title="blue" style="background-color: #0cccf3;">
+                  &nbsp;
+                </a>
+              </li>
+              <li>
+                <a href="#" title="purple" style="background-color: #a60cf3;">
+                  &nbsp;
+                </a>
+              </li>
+              <li>
+                <a href="#" title="black" style="background-color: #000000;">
+                  &nbsp;
+                </a>
+              </li>
+              <li>
+                <a href="#" title="white" style="background-color: #ffffff;">
+                  &nbsp;
+                </a>
+              </li>
+            </ul>
+          <h5>Ordering Options</h5>
+            <input type="checkbox" class="checkbox">
+            <a href="#">Accepts Etsy Gift Cards</a>
+            <input type="checkbox" class="checkbox">
+            <a href="#">Customizable</a>
+          <h5>Shop Location</h5>
+            <input type="radio" name="locationQuery" checked="checked">
+              <a href="#">Anywhere</a>
+            <input type="radio" name="locationQuery">
+              <a href="#">United States</a>
+            <a href="#">Choose a custom location</a>
+          <h5>Ship To</h5>
+            <select>
+              <option>
+                United States
+              </option>
+              <option>
+                Canada
+              </option>
+              <option>
+                Mexico
+              </option>
+            </select>
+        </aside>
+        <main class="content">
+        </main>
       </div>
-      <div class="refineSrch">
-        <h5>Refine your search</h5>
-          <input type="radio" name="item_type" checked="checked">
-          <a href="#">All Items</a>
-          <input type="radio" name="item_type">
-          <a href="#">Handmade</a>
-          <input type="radio" name="item_type">
-          <a href="#">Vintage</a>
-        </ul>
-        <h5>Price</h5>
-          <input type="text" placeholder="Low">
-          <p> to </p>
-          <input type="text" placeholder="High">
-          <button></button>
-        <h5>Filter by Color</h5>
-        <ul>
-          <li>
-            <a href="#" title="red" style="background-color: #f40b32;">
-              &nbsp;
-            </a>
-          </li>
-          <li>
-            <a href="#" title="orange" style="background-color: #ff7f00;">
-              &nbsp;
-            </a>
-          </li>
-          <li>
-            <a href="#" title="yellow" style="background-color: #f3cc0c;">
-              &nbsp;
-            </a>
-          </li>
-          <li>
-            <a href="#" title="green" style="background-color: #0ac20a;">
-              &nbsp;
-            </a>
-          </li>
-          <li>
-            <a href="#" title="blue" style="background-color: #0cccf3;">
-              &nbsp;
-            </a>
-          </li>
-          <li>
-            <a href="#" title="purple" style="background-color: #a60cf3;">
-              &nbsp;
-            </a>
-          </li>
-          <li>
-            <a href="#" title="black" style="background-color: #000000;">
-              &nbsp;
-            </a>
-          </li>
-          <li>
-            <a href="#" title="white" style="background-color: #ffffff;">
-              &nbsp;
-            </a>
-          </li>
-        </ul>
-      <h5>Ordering Options</h5>
-        <input type="checkbox" class="checkbox">
-        <a href="#">Accepts Etsy Gift Cards</a>
-        <input type="checkbox" class="checkbox">
-        <a href="#">Customizable</a>
-      <h5>Shop Location</h5>
-        <input type="radio" name="locationQuery" checked="checked">
-          <a href="#">Anywhere</a>
-        <input type="radio" name="locationQuery">
-          <a href="#">United States</a>
-        <a href="#">Choose a custom location</a>
-      <h5>Ship To</h5>
-        <select>
-          <option>
-            United States
-          </option>
-          <option>
-            Canada
-          </option>
-          <option>
-            Mexico
-          </option>
-        </select>
-    </aside>
-    <main class="content">
-
-    </main>
-  </div>
-</div>
-  </div>
-  <script src=""></script>
-  <script src="main.js"></script>
-</body>
-</html>
+    </div>
+    <div class="row-wrapper">
+      <div class="outer-container">
+        <section class="subscribe">
+          <h3 class="title">Get top trends and fresh editors' picks in your inbox with Etsy Finds.</h3>
+          <button type="submit" class="btn sub">Subscribe</button>
+        </section>
+        <nav class="links">
+          <section class="sell">
+              <ul>
+                <li><h4>Turn Your Passion Into a Business</h4></li>
+                <li><a href="#">Open a Shop</a></li>
+              </ul>
+              <ul>
+                <li><h4>Sell on Etsy</h4></li>
+                <li>
+                  <a href="#">Open a Shop</a>
+                </li>
+                <li><a href="#">Seller Handbook</a></li>
+                <li><a href="#">Etsy Credit Card Reader</a></li>
+              </ul>
+            </section>
+            <section class="join">
+              <ul>
+                <li><h4>Join the Community</h4></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">Forums</a></li>
+                <li><a href="#">Upcoming Events</a></li>
+                <li><a href="#">Affiliates</a></li>
+              </ul>
+            </section>
+            <section class="shop">
+                <ul>
+                  <li><h4>Discover and Shop</h4></li>
+                  <li><a href="#">Gift Cards</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Tastemakers</a></li>
+                  <li><a href="#">Mobile Apps</a></li>
+                  <li><a href="#">Gift Registries</a></li>
+                  <li><a href="#">Wholesale</a></li>
+                  <li><a href="#">Search</a></li>
+                  <li><a href="#">Etsy Finds</a></li>
+                </ul>
+              </section>
+              <section class="know">
+                <ul>
+                  <li><h4>Get to Know Us</h4></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">Developers</a></li>
+                  <li><a href="#">Investors</a></li>
+                </ul>
+              </section>
+              <section class="follow">
+                <ul>
+                  <li><h4>Follow Etsy</h4></li>
+                  <li><a href="https://www.facebook.com/Etsy/">Facebook</a></li>
+                  <li><a href="https://twitter.com/etsy/">Twitter</a></li>
+                  <li><a href="http://www.pinterest.com/etsy/">Pinterest</a></li>
+                  <li><a href="http://instagram.com/etsy">Instagram</a></li>
+                </ul>
+              </section>
+            </nav>
+          </div>
+        </div>
+        <div class="row-wrapper">
+          <div class="outer-container">
+            <footer>
+              <div class="help">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <span></span>
+                      United States
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      English (US)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>$</span>
+                      <span>USD</span>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="help-link">Help</a>
+              </div>
+              <div class="footer links">
+                <ul>
+                  <li>
+                    © 2015 Etsy, Inc.
+                  </li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Copyright</a></li>
+                  <li><a href="#">Interest-based Ads</a></li>
+                </ul>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="main.js"></script>
+    </body>
+    </html>
