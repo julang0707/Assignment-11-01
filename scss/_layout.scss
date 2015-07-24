@@ -31,40 +31,38 @@ header {
   nav {
     @include span-columns(5);
   }
-
-
 }
 
 /************ Main */
-.content {
+.wrapper {
   @include span-columns(12) ;
-
-  margin: 25px 0 25px 0;
 }
 
 /************ Sidebar */
 aside {
-  @include span-columns(3 of 12) ;
-
+  @include span-columns(3) ;
   padding: 10px;
 }
 
 /************ Items */
-.list {
-  @include span-columns(9 of 12) ;
-  @include shift(3);
-
-  padding: 10px;
+.content {
+  @include span-columns(9) ;
+  @include omega();
 }
+.item{
+    @include span-columns(3 of 9);
+    display: inline-block;
+    margin: 0;
+  }
 
 /************ Subscribe */
 .subscribe {
-  @include span-columns(4 of 12);
-  @include shift(4);
+  @include span-columns(6);
+  @include shift(3);
 }
 /************ Links */
 
-.sell, .join, .shop, .know, .follow, {
+.sell, .join, .shopping, .know, .follow, {
   @include span-columns(2 of 12);
 }
 

@@ -372,7 +372,7 @@ body:before {
   height: 100%;
   left: 0;
   margin: 0 auto;
-  max-width: 68em;
+  max-width: 77.71429em;
   opacity: 0.4;
   pointer-events: none;
   position: fixed;
@@ -532,17 +532,6 @@ body {
   font-size: 1em;
   line-height: 1.5; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1em;
-  line-height: 1.2;
-  margin: 0 0 0.75em; }
-
 p {
   margin: 0 0 0.75em; }
 
@@ -577,7 +566,7 @@ picture {
     content: "";
     display: table; }
   .row-wrapper .outer-container {
-    max-width: 68em;
+    max-width: 77.71429em;
     margin-left: auto;
     margin-right: auto; }
     .row-wrapper .outer-container::after {
@@ -629,13 +618,12 @@ header {
       margin-right: 0; }
 
 /************ Main */
-.content {
+.wrapper {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 100%;
-  margin: 25px 0 25px 0; }
-  .content:last-child {
+  width: 100%; }
+  .wrapper:last-child {
     margin-right: 0; }
 
 /************ Sidebar */
@@ -649,14 +637,23 @@ aside {
     margin-right: 0; }
 
 /************ Items */
-.list {
+.content {
   float: left;
   display: block;
   margin-right: 2.12766%;
   width: 74.46809%;
-  margin-left: 25.53191%;
-  padding: 10px; }
-  .list:last-child {
+  margin-right: 0; }
+  .content:last-child {
+    margin-right: 0; }
+
+.item {
+  float: left;
+  display: block;
+  margin-right: 2.85714%;
+  width: 31.42857%;
+  display: inline-block;
+  margin: 0; }
+  .item:last-child {
     margin-right: 0; }
 
 /************ Subscribe */
@@ -664,18 +661,18 @@ aside {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 31.91489%;
-  margin-left: 34.04255%; }
+  width: 48.93617%;
+  margin-left: 25.53191%; }
   .subscribe:last-child {
     margin-right: 0; }
 
 /************ Links */
-.sell, .join, .shop, .know, .follow {
+.sell, .join, .shopping, .know, .follow {
   float: left;
   display: block;
   margin-right: 2.12766%;
   width: 14.89362%; }
-  .sell:last-child, .join:last-child, .shop:last-child, .know:last-child, .follow:last-child {
+  .sell:last-child, .join:last-child, .shopping:last-child, .know:last-child, .follow:last-child {
     margin-right: 0; }
 
 /************ Footer */
@@ -705,15 +702,17 @@ footer {
     footer .footer.links:last-child {
       margin-right: 0; }
 
+/***** Global Variables *****/
 /************ General Page Elements */
 .row-wrapper {
-  display: block; }
+  display: block;
+  background: #F5F5F1; }
   .row-wrapper::after {
     clear: both;
     content: "";
     display: table; }
   .row-wrapper .outer-container {
-    max-width: 68em;
+    max-width: 77.71429em;
     margin-left: auto;
     margin-right: auto; }
     .row-wrapper .outer-container::after {
@@ -727,5 +726,13 @@ nav {
     list-style: none;
     display: inline-block;
     float: left; }
+
+.item {
+  border: 1px solid #000; }
+  .item h3 {
+    font: .8em; }
+  .item img {
+    width: 225px;
+    height: 172px; }
 
 /*# sourceMappingURL=styles.css.map */

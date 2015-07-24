@@ -1,43 +1,47 @@
-var $url = 'https://openapi.etsy.com/v2/listings/active.js?api_key=i5449dk10a199w2og3ds4oa0&keywords=nashville&includes=Images,Shop';
+var url = 'https://api.etsy.com/v2/listings/active.js?api_key=h9oq2yf3twf4ziejn10b717i&keywords=nashville&includes=Images,Shop';
 
-(function($){
 
-    $(document).ready(function(){
-        $('#etsy-search').bind('submit', function() {
-            api_key = "i5449dk10a199w2og3ds4oa0";
-            terms = $('#etsy-terms').val();
-            etsyURL = $url;
+$.ajax(url,{
+  dataType: 'jsonp',
+  error: function( req, status, err ) {
+    console.log( 'something went wrong', status, err );
+  },
+  success: function(data, textStatus, xhr) {
+    buildItemList(data.results);
+  }
+})
+var buildItemList = function(items){
+  var html = items.map(buildItem);
 
-            $('#etsy-images').empty();
-            $('<p></p>').text('Searching for '+terms).appendTo('#etsy-images');
+  html.reduce(function(html, item){
+    return html + item;
+  });
 
-            $.ajax({
-                url: etsyURL,
-                dataType: 'jsonp',
-                success: function(data) {
-                    if (data.ok) {
-                        $('#etsy-images').empty();
-                        if (data.count > 0) {
-                            $.each(data.results, function(i,item) {
-                                $("<img/>").attr("src", item.Images[0].url_75x75).appendTo("#etsy-images").wrap(
-                                    "<a href='" + item.url + "'></a>"
-                                );
-                                if (i%4 == 3) {
-                                    $('<br/>').appendTo('#etsy-images');
-                                }
-                            });
-                        } else {
-                            $('<p>No results.</p>').appendTo('#etsy-images');
-                        }
-                    } else {
-                        $('#etsy-images').empty();
-                        alert(data.error);
-                    }
-                }
-            });
+  var $items = $('.content');
+  $items.html(html);
+};
 
-            return false;
-        })
-    });
+var buildItem = function(item){
+  var image = _.first(item.Images);
+      image = image.url_570xN;
 
-})(jQuery);
+  var imgUrl = item.url;
+  var title = item.title.substring(0,37) + '...';
+  var shop = item.Shop.shop_name;
+  var price = item.price;
+  var currency= item.currency_code;
+
+  var itemTemplate = $('#list-item').html();
+  var itemHtml = _.template(itemTemplate);
+  var output = itemHtml(
+    {
+      image: image,
+      imgUrl: imgUrl,
+      title: title,
+      shop: shop,
+      price: price,
+      currency: currency,
+    }
+  );
+  return output;
+};
