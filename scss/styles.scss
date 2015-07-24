@@ -3,18 +3,18 @@
 @import "lib/bourbon/bourbon";
 @import "lib/neat/neat-helpers";
 @import "base/grid-settings";
-@import "lib/bitters/variables";
+// @import "lib/bitters/variables";
 
-// Bitters Variable Overrides
-$base-font-family: "Arial", $sans-serif;
-
-@import "lib/bitters/extends/base";
-@import "lib/bitters/mixins/base";
-@import "lib/bitters/typography";
-//@import "lib/bitters/forms";
-@import "lib/bitters/tables";
-@import "lib/bitters/lists";
-@import "lib/bitters/flashes";
+// // Bitters Variable Overrides
+// $base-font-family: "Arial", $sans-serif;
+//
+// @import "lib/bitters/extends/base";
+// @import "lib/bitters/mixins/base";
+// @import "lib/bitters/typography";
+// //@import "lib/bitters/forms";
+// @import "lib/bitters/tables";
+// @import "lib/bitters/lists";
+// @import "lib/bitters/flashes";
 
 
 @import "lib/neat/neat";
@@ -29,7 +29,7 @@ $base-font-family: "Arial", $sans-serif;
 
 /***** Global Variables *****/
 $mainBkgnd: #F5F5F1;
-$fontSize: 12px;
+// $fontSize: 12px;
 
 /************ General Page Elements */
 .row-wrapper {
