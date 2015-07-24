@@ -735,4 +735,56 @@ nav {
     width: 225px;
     height: 172px; }
 
+.sidebar .show {
+  font-size: 13px;
+  color: #555555;
+  margin: 0;
+  padding-bottom: 9px;
+  font-weight: bold; }
+.sidebar .categories {
+  background-color: white;
+  border: 1px solid #E1E3DF;
+  border-radius: 3px;
+  border-bottom-color: #CBCCC9;
+  margin: 0 0 24px;
+  padding: 12px; }
+  .sidebar .categories h5 {
+    margin: 0;
+    padding-bottom: 4px; }
+  .sidebar .categories h5 a {
+    font-size: 13px;
+    font-weight: bold;
+    color: #555555;
+    margin: 0; }
+    .sidebar .categories h5 a:hover {
+      text-decoration: underline; }
+  .sidebar .categories ul a {
+    font-size: 13px;
+    color: #0292B5;
+    padding: 0 0 6px 12px; }
+    .sidebar .categories ul a:hover {
+      text-decoration: underline; }
+.sidebar h5 {
+  font-size: 13px;
+  color: #555555;
+  margin: 0;
+  padding-bottom: 9px;
+  font-weight: bold; }
+.sidebar .panal {
+  background-color: white;
+  border: 1px solid #E1E3DF;
+  border-radius: 3px;
+  border-bottom-color: #CBCCC9;
+  margin: 0 0 24px;
+  padding: 12px; }
+  .sidebar .panal .item-type .srchBts input {
+    margin: 0; }
+  .sidebar .panal .item-type .srchBts a {
+    font-size: 13px;
+    color: #0292B5;
+    padding: 0;
+    font-weight: normal; }
+    .sidebar .panal .item-type .srchBts a:hover {
+      text-decoration: underline; }
+
 /*# sourceMappingURL=styles.css.map */
