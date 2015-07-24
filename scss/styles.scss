@@ -1,7 +1,22 @@
 /***** 3rd Party Components *****/
 @import "lib/normalize-css/normalize";
 @import "lib/bourbon/bourbon";
+@import "lib/neat/neat-helpers";
 @import "base/grid-settings";
+@import "lib/bitters/variables";
+
+// Bitters Variable Overrides
+$base-font-family: "Arial", $sans-serif;
+
+@import "lib/bitters/extends/base";
+@import "lib/bitters/mixins/base";
+@import "lib/bitters/typography";
+//@import "lib/bitters/forms";
+@import "lib/bitters/tables";
+@import "lib/bitters/lists";
+@import "lib/bitters/flashes";
+
+
 @import "lib/neat/neat";
 @import "base/base";
 
@@ -11,9 +26,15 @@
 /***** Custom Layout Styles *****/
 @import "layout";
 
+
+/***** Global Variables *****/
+$mainBkgnd: #F5F5F1;
+$fontSize: 12px;
+
 /************ General Page Elements */
 .row-wrapper {
   @include row();
+  background: $mainBkgnd;
 
   .outer-container {
     @include outer-container;
@@ -27,5 +48,17 @@ li {
   list-style: none;
   display: inline-block;
   float: left;
+}
+}
+
+.item {
+  border: 1px solid #000;
+
+h3 {
+    font: .8em;
+}
+img {
+  width: 225px;
+  height: 172px;
 }
 }
