@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /***** 3rd Party Components *****/
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
@@ -565,11 +566,11 @@ picture {
     clear: both;
     content: "";
     display: table; }
-  .row-wrapper .outer-container {
-    max-width: 77.71429em;
+  .row-wrapper .inner {
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto; }
-    .row-wrapper .outer-container::after {
+    .row-wrapper .inner::after {
       clear: both;
       content: "";
       display: table; }
@@ -580,9 +581,9 @@ header {
   display: block;
   margin-right: 2.12766%;
   width: 100%;
-  height: 72px;
   display: table-cell;
-  padding: 20px 0px; }
+  height: 80px;
+  padding: 20px 0; }
   header:last-child {
     margin-right: 0; }
   header #logo {
@@ -590,7 +591,6 @@ header {
     display: block;
     margin-right: 2.12766%;
     width: 6.38298%;
-    margin-left: 8.51064%;
     display: block;
     vertical-align: left; }
     header #logo:last-child {
@@ -599,32 +599,39 @@ header {
     float: left;
     display: block;
     margin-right: 2.12766%;
-    width: 23.40426%; }
+    width: 23.40426%;
+    display: block;
+    margin: 0; }
     header #search:last-child {
       margin-right: 0; }
   header .btn.search {
     float: left;
     display: block;
     margin-right: 2.12766%;
-    width: 14.89362%; }
+    width: 6.38298%; }
     header .btn.search:last-child {
+      margin-right: 0; }
+  header .browse {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 6.38298%;
+    display: block; }
+    header .browse:last-child {
       margin-right: 0; }
   header nav {
     float: left;
     display: block;
     margin-right: 2.12766%;
-    width: 40.42553%; }
+    width: 40.42553%;
+    display: block;
+    float: right; }
     header nav:last-child {
       margin-right: 0; }
 
 /************ Main */
-.wrapper {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 100%; }
-  .wrapper:last-child {
-    margin-right: 0; }
+.main-wrapper {
+  overflow: auto; }
 
 /************ Sidebar */
 aside {
@@ -704,6 +711,9 @@ footer {
 
 /***** Global Variables *****/
 /************ General Page Elements */
+* {
+  font-family: 'Arial', sans-serif; }
+
 .row-wrapper {
   display: block;
   background: #F5F5F1; }
@@ -720,19 +730,95 @@ footer {
       content: "";
       display: table; }
 
-nav {
-  display: inline-block; }
-  nav li {
-    list-style: none;
-    display: inline-block;
-    float: left; }
+header {
+  background: #fff; }
+  header #search {
+    font-size: .9em;
+    border: 1px solid #CFCBC8;
+    background: #f9f9f8;
+    padding: 6px 10px;
+    height: 34px;
+    font-size: 14px;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  header .btn.search {
+    height: 34px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0.45em 1em;
+    font-size: 14px;
+    background: #34A8C4; }
+  header .browse {
+    border: 1px solid #E5E5E5;
+    height: auto;
+    white-space: nowrap;
+    padding: 8px;
+    border-radius: 3px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.2em;
+    display: block;
+    width: auto;
+    text-decoration: none; }
+    header .browse .browse::after {
+      content: '▾';
+      color: #bbb;
+      font-size: 8px;
+      line-height: 1em;
+      position: relative;
+      top: 0;
+      left: 3px;
+      margin: 0 1px; }
+  header nav {
+    display: inline-block; }
+    header nav ul {
+      float: right; }
+    header nav li {
+      list-style: none;
+      display: inline-block;
+      float: left;
+      margin: 0 10px 0 0; }
+      header nav li .register {
+        color: #0192B5;
+        text-decoration: none; }
+      header nav li .sign-up {
+        height: auto;
+        display: block;
+        float: left;
+        padding: 8px;
+        line-height: 16px;
+        font-size: 14px;
+        border: 1px solid;
+        text-decoration: none;
+        border-radius: 3px;
+        box-sizing: border-box;
+        color: #0192B5; }
 
 .item {
-  border: 1px solid #000; }
-  .item h3 {
-    font: .8em; }
+  border: 1px solid #000;
+  background: #fff; }
   .item img {
     width: 225px;
-    height: 172px; }
+    height: 172px;
+    overflow: hidden; }
+  .item h3 {
+    font-size: .7em;
+    margin: 0; }
+  .item h4 {
+    font-size: .6em;
+    display: inline;
+    margin: 0; }
+  .item p {
+    font-size: .5em;
+    float: right;
+    color: #78c042;
+    margin: 0; }
 
 /*# sourceMappingURL=styles.css.map */

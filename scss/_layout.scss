@@ -2,40 +2,50 @@
 .row-wrapper {
   @include row();
 
-  .outer-container {
-    @include outer-container;
+  .inner {
+    @include outer-container(1000px);
   }
 }
 
 /************ Header */
 header {
   @include span-columns(12);
-  height: 72px;
   display: table-cell;
-  padding: 20px 0px;
+  height: 80px;
+  padding: 20px 0;
 
   #logo {
-    @include span-columns(1 of 12);
-    @include shift(1);
+    @include span-columns(1);
+    // @include shift(1);
     display: block;
     vertical-align: left;
   }
 
   #search {
-    @include span-columns(3 of 12);
+    @include span-columns(3);
+    display: block;
+    margin: 0;
   }
 
   .btn.search{
-    @include span-columns(2 of 12);
+    @include span-columns(1);
   }
+
+  .browse {
+    @include span-columns(1);
+    display: block;
+  }
+
   nav {
     @include span-columns(5);
+    display: block;
+    float: right;
   }
 }
 
 /************ Main */
-.wrapper {
-  @include span-columns(12) ;
+.main-wrapper {
+  overflow: auto;
 }
 
 /************ Sidebar */

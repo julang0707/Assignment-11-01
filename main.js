@@ -23,10 +23,10 @@ var buildItemList = function(items){
 
 var buildItem = function(item){
   var image = _.first(item.Images);
-      image = image.url_570xN;
+      image = image.url_170x135;
 
   var imgUrl = item.url;
-  var title = item.title.substring(0,37) + '...';
+  var title = item.title.substring(0,32) + '...';
   var shop = item.Shop.shop_name;
   var price = item.price;
   var currency= item.currency_code;

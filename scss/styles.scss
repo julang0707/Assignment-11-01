@@ -3,8 +3,8 @@
 @import "lib/bourbon/bourbon";
 @import "lib/neat/neat-helpers";
 @import "base/grid-settings";
-// @import "lib/bitters/variables";
-
+// // @import "lib/bitters/_variables";
+//
 // // Bitters Variable Overrides
 // $base-font-family: "Arial", $sans-serif;
 //
@@ -29,9 +29,13 @@
 
 /***** Global Variables *****/
 $mainBkgnd: #F5F5F1;
-// $fontSize: 12px;
+$fontSize: 12px;
 
 /************ General Page Elements */
+* {
+  font-family: 'Arial', sans-serif;
+}
+
 .row-wrapper {
   @include row();
   background: $mainBkgnd;
@@ -40,25 +44,117 @@ $mainBkgnd: #F5F5F1;
     @include outer-container;
   }
 }
+header {
+  background: #fff;
 
-nav {
-  display: inline-block;
+  #search {
+    font-size: .9em;
+    border: 1px solid #CFCBC8;
+    background: #f9f9f8;
+    padding: 6px 10px;
+    height: 34px;
+    font-size: 14px;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 
-li {
-  list-style: none;
-  display: inline-block;
-  float: left;
-}
+  .btn.search {
+    height: 34px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0.45em 1em;
+    font-size: 14px;
+    background: #34A8C4;
+  }
+
+  .browse {
+    border: 1px solid #E5E5E5;
+    height: auto;
+    white-space: nowrap;
+    padding: 8px;
+    border-radius: 3px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.2em;
+    display: block;
+    width: auto;
+    text-decoration: none;
+
+    .browse::after {
+    content: '▾';
+    color: #bbb;
+    font-size: 8px;
+    line-height: 1em;
+    position: relative;
+    top: 0;
+    left: 3px;
+    margin: 0 1px;
+    }
+  }
+  nav {
+    display: inline-block;
+    ul{
+      float: right;
+    }
+    li {
+      list-style: none;
+      display: inline-block;
+      float: left;
+      margin: 0 10px 0 0;
+
+      .register{
+        color: #0192B5;
+        text-decoration: none;
+      }
+        .sign-up {
+          height: auto;
+          display: block;
+          float: left;
+          padding: 8px;
+          line-height: 16px;
+          font-size: 14px;
+          border: 1px solid;
+          text-decoration: none;
+          border-radius: 3px;
+          box-sizing: border-box;
+          color: #0192B5;
+        }
+    }
+  }
 }
 
 .item {
   border: 1px solid #000;
+  background: #fff;
+  img {
+    width: 225px;
+    height: 172px;
+    overflow: hidden;
+  }
 
-h3 {
-    font: .8em;
-}
-img {
-  width: 225px;
-  height: 172px;
-}
+  h3 {
+    font-size: .7em;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: .6em;
+    display: inline;
+    margin: 0;
+  }
+
+  p {
+    font-size: .5em;
+    float: right;
+    color: #78c042;
+    margin: 0;
+  }
+
 }
