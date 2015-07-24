@@ -27,8 +27,8 @@
     <div class="outer-container">
       <div class="wrapper">
         <aside class="sidebar">
-          <h5>Show results for:</h5>
-          <div class="catagories">
+          <h5 class= "show">Show results for:</h5>
+          <div class="categories">
             <h5><a href="#">All categories</a></h5>
             <ul>
               <li><a href="#">Art &amp; Collectibles</a></li>
@@ -47,86 +47,104 @@
               <li><a href="#">Toys &amp; Games</a></li>
             </ul>
           </div>
-          <div class="refineSrch">
-            <h5>Refine your search</h5>
-            <input type="radio" name="item_type" checked="checked">
-            <a href="#">All Items</a>
-            <input type="radio" name="item_type">
-            <a href="#">Handmade</a>
-            <input type="radio" name="item_type">
-            <a href="#">Vintage</a>
-          </ul>
-          <h5>Price</h5>
-          <input type="text" placeholder="Low">
-          <p> to </p>
-          <input type="text" placeholder="High">
-          <button></button>
-          <h5>Filter by Color</h5>
-          <ul>
-            <li>
-              <a href="#" title="red" style="background-color: #f40b32;">
+          <h5>Refine your search</h5>
+          <div class="panal">
+            <form>
+              <div class= "item-type">
+                <h5>Item Type</h5>
+                <div class="srchBts">
+                  <labal>
+                    <input type="radio" name="item_type" checked="checked">
+                    <a href="#">All Items</a>
+                  </labal>
+                </br>
+                <labal>
+                  <input type="radio" name="item_type">
+                  <a href="#">Handmade</a>
+                </labal>
+              </br>
+                <label>
+                  <input type="radio" name="item_type">
+                  <a href="#">Vintage</a>
+                </labal>
+              </br>
+            </div>
+          </div>
+          <div class="price">
+            <h5>Price</h5>
+              <input type="text" placeholder="Low">
+              <p> to </p>
+              <input type="text" placeholder="High">
+          </div>
+          <div class="color">
+            <h5>Filter by Color</h5>
+            <ul>
+              <li>
+                <a href="#" title="red" style="background-color: #f40b32;">
+                  &nbsp;
+                </a>
+              </li>
+              <li>
+                <a href="#" title="orange" style="background-color: #ff7f00;">
+                  &nbsp;
+                </a>
+              </li>
+              <li>
+                <a href="#" title="yellow" style="background-color: #f3cc0c;">
+                  &nbsp;
+                </a>
+              </li>
+              <li>
+                <a href="#" title="green" style="background-color: #0ac20a;">
                 &nbsp;
-              </a>
-            </li>
-            <li>
-              <a href="#" title="orange" style="background-color: #ff7f00;">
-                &nbsp;
-              </a>
-            </li>
-            <li>
-              <a href="#" title="yellow" style="background-color: #f3cc0c;">
-                &nbsp;
-              </a>
-            </li>
-            <li>
-              <a href="#" title="green" style="background-color: #0ac20a;">
-                &nbsp;
-              </a>
-            </li>
-            <li>
-              <a href="#" title="blue" style="background-color: #0cccf3;">
-                &nbsp;
-              </a>
-            </li>
-            <li>
-              <a href="#" title="purple" style="background-color: #a60cf3;">
-                &nbsp;
-              </a>
-            </li>
-            <li>
-              <a href="#" title="black" style="background-color: #000000;">
-                &nbsp;
-              </a>
-            </li>
-            <li>
-              <a href="#" title="white" style="background-color: #ffffff;">
-                &nbsp;
-              </a>
-            </li>
-          </ul>
-          <h5>Ordering Options</h5>
-          <input type="checkbox" class="checkbox">
-          <a href="#">Accepts Etsy Gift Cards</a>
-          <input type="checkbox" class="checkbox">
-          <a href="#">Customizable</a>
-          <h5>Shop Location</h5>
-          <input type="radio" name="locationQuery" checked="checked">
-          <a href="#">Anywhere</a>
-          <input type="radio" name="locationQuery">
-          <a href="#">United States</a>
-          <a href="#">Choose a custom location</a>
-          <h5>Ship To</h5>
-          <select>
-            <option>
-              United States
-            </option>
-            <option>
-              Canada
-            </option>
-            <option>
-              Mexico
-            </option>
-          </select>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="blue" style="background-color: #0cccf3;">
+                  &nbsp;
+                </a>
+              </li>
+              <li>
+                <a href="#" title="purple" style="background-color: #a60cf3;">
+                  &nbsp;
+                </a>
+              </li>
+              <li>
+                <a href="#" title="black" style="background-color: #000000;">
+                  &nbsp;
+                </a>
+              </li>
+              <li>
+                <a href="#" title="white" style="background-color: #ffffff;">
+                  &nbsp;
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="ordering">
+            <h5>Ordering Options</h5>
+            <input type="checkbox" class="checkbox">
+            <a href="#">Accepts Etsy Gift Cards</a>
+            <input type="checkbox" class="checkbox">
+            <a href="#">Customizable</a>
+          </div>
+          <div class="location">
+            <h5>Shop Location</h5>
+            <input type="radio" name="locationQuery" checked="checked">
+            <a href="#">Anywhere</a>
+            <input type="radio" name="locationQuery">
+            <a href="#">United States</a>
+            <a href="#">Choose a custom location</a>
+          </div>
+          <div class="ship">
+            <h5>Ship To</h5>
+            <select>
+              <option>United States</option>
+              <option>Canada</option>
+              <option>Mexico</option>
+            </select>
+          </div>
+        </section>
         </aside>
         <main class="content">
         </main>
