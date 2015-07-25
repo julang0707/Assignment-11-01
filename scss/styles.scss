@@ -88,14 +88,14 @@ header {
     text-decoration: none;
 
     .browse::after {
-    content: '▾';
-    color: #bbb;
-    font-size: 8px;
-    line-height: 1em;
-    position: relative;
-    top: 0;
-    left: 3px;
-    margin: 0 1px;
+      content: '▾';
+      color: #bbb;
+      font-size: 8px;
+      line-height: 1em;
+      position: relative;
+      top: 0;
+      left: 3px;
+      margin: 0 1px;
     }
   }
   nav {
@@ -113,54 +113,24 @@ header {
         color: #0192B5;
         text-decoration: none;
       }
-        .sign-up {
-          height: auto;
-          display: block;
-          float: left;
-          padding: 8px;
-          line-height: 16px;
-          font-size: 14px;
-          border: 1px solid;
-          text-decoration: none;
-          border-radius: 3px;
-          box-sizing: border-box;
-          color: #0192B5;
-        }
+      .sign-up {
+        height: auto;
+        display: block;
+        float: left;
+        padding: 8px;
+        line-height: 16px;
+        font-size: 14px;
+        border: 1px solid;
+        text-decoration: none;
+        border-radius: 3px;
+        box-sizing: border-box;
+        color: #0192B5;
+      }
     }
   }
 }
 
-.item {
-  border: 1px solid #000;
-  background: #fff;
-  img {
-    width: 225px;
-    height: 172px;
-    overflow: hidden;
-  }
 
-  h3 {
-    font-size: .7em;
-    margin: 0;
-  }
-
-  h4 {
-    font-size: .6em;
-    display: inline;
-    margin: 0;
-  }
-
-  p {
-    font-size: .5em;
-    float: right;
-    color: #78c042;
-    margin: 0;
-  }
-
-}
-
-aside{
-}
 .sidebar{
   .show{
     font-size: 13px;
@@ -229,5 +199,33 @@ aside{
         }
       }
     }
+  }
+}
+
+.item {
+  border: 1px solid #000;
+  background: #fff;
+  img {
+    width: 225px;
+    height: 172px;
+    overflow: hidden;
+  }
+
+  h3 {
+    font-size: .7em;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: .6em;
+    display: inline;
+    margin: 0;
+  }
+
+  p {
+    font-size: .5em;
+    float: right;
+    color: #78c042;
+    margin: 0;
   }
 }

@@ -801,26 +801,6 @@ header {
         box-sizing: border-box;
         color: #0192B5; }
 
-.item {
-  border: 1px solid #000;
-  background: #fff; }
-  .item img {
-    width: 225px;
-    height: 172px;
-    overflow: hidden; }
-  .item h3 {
-    font-size: .7em;
-    margin: 0; }
-  .item h4 {
-    font-size: .6em;
-    display: inline;
-    margin: 0; }
-  .item p {
-    font-size: .5em;
-    float: right;
-    color: #78c042;
-    margin: 0; }
-
 .sidebar .show {
   font-size: 13px;
   color: #555555;
@@ -872,5 +852,25 @@ header {
     font-weight: normal; }
     .sidebar .panal .item-type .srchBts a:hover {
       text-decoration: underline; }
+
+.item {
+  border: 1px solid #000;
+  background: #fff; }
+  .item img {
+    width: 225px;
+    height: 172px;
+    overflow: hidden; }
+  .item h3 {
+    font-size: .7em;
+    margin: 0; }
+  .item h4 {
+    font-size: .6em;
+    display: inline;
+    margin: 0; }
+  .item p {
+    font-size: .5em;
+    float: right;
+    color: #78c042;
+    margin: 0; }
 
 /*# sourceMappingURL=styles.css.map */
