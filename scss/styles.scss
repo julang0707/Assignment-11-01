@@ -98,10 +98,11 @@ header {
       margin: 0 1px;
     }
   }
-  nav {
+  .nav {
     display: inline-block;
     ul{
       float: right;
+      overflow: auto;
     }
     li {
       list-style: none;
@@ -188,16 +189,16 @@ header {
       border-bottom: 1px solid #E1E3DF;
       padding-bottom: 18px;
       margin-bottom: 18px;
-        a{
-          font-size: 13px;
-          color: #0292B5;
-          padding: 0 ;
-          font-weight: normal;
-          &:hover{
-            text-decoration: underline;
-          }
+      a{
+        font-size: 13px;
+        color: #0292B5;
+        padding: 0 ;
+        font-weight: normal;
+        &:hover{
+          text-decoration: underline;
         }
       }
+    }
     .price{
       padding-bottom: 18px;
       margin-bottom: 18px;
@@ -304,28 +305,57 @@ header {
   }
 }
 
-.content .sort-options::before {
-  content: " ";
-  display: table;
-  .number span {
-    display: inline;
-    .a {
-      text-decoration: none;
-      font-color: #78c042;
-    }
+.options {
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+p.number {
+  font-size: .8em;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: left;
+  a {
+    text-decoration: none;
+    color: #0192B5;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  span {
+    font-weight: bold;
+  }
+}
+p.sort-by {
+  float: right;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: .8em;
+  padding: 0 17px 0 0;
+
+  a {
+    text-decoration: none;
+    color: #0192B5;
   }
 }
 
 
+
+.content {
+  padding: 9px 0 35px 0;
+  overflow: auto;
+}
+
 .item {
   padding-bottom: 9px;
-  margin-right: 0 14px 7px 0;
+  margin: 0px 15px 9px 0;
   border-radius: 3px;
   background-color: #FFF;
   border: 1px solid #E1E3DF;
   border-bottom-color: #CBCCC9;
   img {
-    width: 232px;
+    width: 256px;
     height: 172px;
   }
 
@@ -335,16 +365,28 @@ header {
     font-weight: normal;
     display: inline;
     padding: 0 0 0 5px;
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
   }
 
   h4 {
     font-size: .8em;
-    color: #b2b2b2;
     font-weight: normal;
     display: inline-block;
     margin: 0;
     padding: 0 0 0 5px;
     float: left;
+
+    a {
+      color: #b2b2b2;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   }
 
   p {
@@ -418,40 +460,40 @@ header {
   }
 }
 
-nav{
+.links nav{
   margin: 50px 50px 0;
   display: inline-block;
   width: 90%;
   padding: 30px;
 }
-  .links{
-    font-size: 13px;
-    color: #333333;
-    border-bottom: 1px solid #E1E3DF;
-    section{
-      width: 185px;
-      margin: 0;
-    }
-    h4{
-      font-weight: 200;
-      margin-bottom: 5px;
-    }
-    button{
-      width: 100px;
-      padding: 0;
-      height: 25px;
-      font-weight: normal;
-      background-color: #66B7D0;
-    }
-    a{
-      color: #0292b5;
-      line-height: 25px;
-      font-weight: 500;
-      &:hover{
-        text-decoration: underline;
-      }
+.links{
+  font-size: 13px;
+  color: #333333;
+  border-bottom: 1px solid #E1E3DF;
+  section{
+    width: 185px;
+    margin: 0;
+  }
+  h4{
+    font-weight: 200;
+    margin-bottom: 5px;
+  }
+  button{
+    width: 100px;
+    padding: 0;
+    height: 25px;
+    font-weight: normal;
+    background-color: #66B7D0;
+  }
+  a{
+    color: #0292b5;
+    line-height: 25px;
+    font-weight: 500;
+    &:hover{
+      text-decoration: underline;
     }
   }
+}
 footer{
   margin-top: 15px;
   display: inline-block;

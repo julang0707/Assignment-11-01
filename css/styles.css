@@ -619,14 +619,14 @@ header {
     display: block; }
     header .browse:last-child {
       margin-right: 0; }
-  header nav {
+  header .nav {
     float: left;
     display: block;
     margin-right: 2.12766%;
-    width: 40.42553%;
+    width: 48.93617%;
     display: block;
     float: right; }
-    header nav:last-child {
+    header .nav:last-child {
       margin-right: 0; }
 
 /************ Main */
@@ -673,11 +673,20 @@ aside {
     margin-right: 0; }
 
 /************ Links */
+.links {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 100%; }
+  .links:last-child {
+    margin-right: 0; }
+
 .sell, .join, .shopping, .know, .follow {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 14.89362%; }
+  width: 16.59574%;
+  margin-left: 8.51064%; }
   .sell:last-child, .join:last-child, .shopping:last-child, .know:last-child, .follow:last-child {
     margin-right: 0; }
 
@@ -775,19 +784,20 @@ header {
       top: 0;
       left: 3px;
       margin: 0 1px; }
-  header nav {
+  header .nav {
     display: inline-block; }
-    header nav ul {
-      float: right; }
-    header nav li {
+    header .nav ul {
+      float: right;
+      overflow: auto; }
+    header .nav li {
       list-style: none;
       display: inline-block;
       float: left;
       margin: 0 10px 0 0; }
-      header nav li .register {
+      header .nav li .register {
         color: #0192B5;
         text-decoration: none; }
-      header nav li .sign-up {
+      header .nav li .sign-up {
         height: auto;
         display: block;
         float: left;
@@ -925,24 +935,48 @@ header {
     -webkit-appearance: none;
     padding: 10px; }
 
-.content .sort-options::before {
-  content: " ";
-  display: table; }
-  .content .sort-options::before .number span {
-    display: inline; }
-    .content .sort-options::before .number span .a {
-      text-decoration: none;
-      font-color: #78c042; }
+.options {
+  margin: 0;
+  padding: 10px 0 0 0; }
+
+p.number {
+  font-size: .8em;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: left; }
+  p.number a {
+    text-decoration: none;
+    color: #0192B5; }
+  p.number a:hover {
+    text-decoration: underline; }
+  p.number span {
+    font-weight: bold; }
+
+p.sort-by {
+  float: right;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: .8em;
+  padding: 0 17px 0 0; }
+  p.sort-by a {
+    text-decoration: none;
+    color: #0192B5; }
+
+.content {
+  padding: 9px 0 35px 0;
+  overflow: auto; }
 
 .item {
   padding-bottom: 9px;
-  margin-right: 0 14px 7px 0;
+  margin: 0px 15px 9px 0;
   border-radius: 3px;
   background-color: #FFF;
   border: 1px solid #E1E3DF;
   border-bottom-color: #CBCCC9; }
   .item img {
-    width: 232px;
+    width: 256px;
     height: 172px; }
   .item h3 {
     font-size: .8em;
@@ -950,14 +984,21 @@ header {
     font-weight: normal;
     display: inline;
     padding: 0 0 0 5px; }
+    .item h3 a {
+      text-decoration: none;
+      color: #000; }
   .item h4 {
     font-size: .8em;
-    color: #b2b2b2;
     font-weight: normal;
     display: inline-block;
     margin: 0;
     padding: 0 0 0 5px;
     float: left; }
+    .item h4 a {
+      color: #b2b2b2;
+      text-decoration: none; }
+    .item h4 a:hover {
+      text-decoration: underline; }
   .item p {
     font-size: 0.8em;
     float: right;
@@ -1022,7 +1063,7 @@ header {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
     margin: 0 0 0 10px; }
 
-nav {
+.links nav {
   margin: 50px 50px 0;
   display: inline-block;
   width: 90%;
