@@ -47,7 +47,7 @@
           </ul>
         </div>
         <h5>Refine your search</h5>
-        <div class="panal">
+        <section class="panal">
           <form>
             <div class= "item-type">
               <h5>Item Type</h5>
@@ -67,74 +67,69 @@
               <a href="#">Vintage</a>
             </labal>
           </br>
+        </form>
       </div>
     </div>
-  </div>
   <div class="price">
     <h5>Price</h5>
-    <input type="text" placeholder="Low">
-    <p> to </p>
-    <input type="text" placeholder="High">
+    <div>
+      <input type="text" name="low" placeholder="Low" value="">
+    </div>
+    <div>
+      <p>to</p>
+    </div>
+    <div>
+      <input type="text" name="high" placeholder="High" value="">
+    </div>
+    <div class="arrow-left">
+      <input type="submit"id="submit">
+    </div>
   </div>
-  <div class="color">
+  <div class="type">
     <h5>Filter by Color</h5>
-    <ul>
+    <ul class="color">
       <li>
-        <a href="#" title="red" style="background-color: #f40b32;">
-          &nbsp;
-        </a>
+        <a href="#"><div id="red"></div></a>
+      <li>
+        <a href="#"><div id="orange"></div></a>
       </li>
       <li>
-        <a href="#" title="orange" style="background-color: #ff7f00;">
-          &nbsp;
-        </a>
+        <a href="#"><div id="yellow"></div></a>
       </li>
       <li>
-        <a href="#" title="yellow" style="background-color: #f3cc0c;">
-          &nbsp;
-        </a>
+        <a href="#"><div id="green"></div></a>
       </li>
       <li>
-        <a href="#" title="green" style="background-color: #0ac20a;">
-          &nbsp;
-        </a>
+        <a href="#"><div id="blue"></div></a>
       </li>
       <li>
-        <a href="#" title="blue" style="background-color: #0cccf3;">
-          &nbsp;
-        </a>
+        <a href="#"><div id="purple"></div></a>
       </li>
       <li>
-        <a href="#" title="purple" style="background-color: #a60cf3;">
-          &nbsp;
-        </a>
+        <a href="#"><div id="black"></div></a>
       </li>
       <li>
-        <a href="#" title="black" style="background-color: #000000;">
-          &nbsp;
-        </a>
-      </li>
-      <li>
-        <a href="#" title="white" style="background-color: #ffffff;">
-          &nbsp;
-        </a>
+        <a href="#"><div id="white"></div></a>
       </li>
     </ul>
   </div>
   <div class="ordering">
     <h5>Ordering Options</h5>
-    <input type="checkbox" class="checkbox">
-    <a href="#">Accepts Etsy Gift Cards</a>
-    <input type="checkbox" class="checkbox">
-    <a href="#">Customizable</a>
+    <form>
+      <a href="#"><input type="checkbox">Accepts Etsy Gift Cards</a>
+      <br>
+      <a href="#"><input type="checkbox">Customizable</a>
+    </form>
   </div>
   <div class="location">
     <h5>Shop Location</h5>
-    <input type="radio" name="locationQuery" checked="checked">
-    <a href="#">Anywhere</a>
-    <input type="radio" name="locationQuery">
-    <a href="#">United States</a>
-    <a href="#">Choose a custom location</a>
+    <form>
+      <a href="#"><input type="radio" checked>Anywhere</a>
+      <br>
+      <a href="#"><input type="radio">United States</a>
+      <br>
+      <a href="#">Choose a custom location</a>
+    </form>
   </div>
   <div class="ship">
     <h5>Ship To</h5>
@@ -157,8 +152,8 @@
 <!-- <div class="row-wrapper">
   <div class="inner"> -->
     <section class="subscribe">
-      <p class="title">Get top trends and fresh editors' picks in your inbox with Etsy Finds.</p>
-      <input type="text" name="name" placeholder="Enter your email" value="">
+      <h3 class="title">Get top trends and fresh editors' picks in your inbox with Etsy Finds.</h3>
+      <input type="text" class="text" id="email-text" placeholder="Enter your email">
       <button type="submit" class="btn sub">Subscribe</button>
     </section>
   <!-- </div>
@@ -169,13 +164,10 @@
       <section class="sell">
         <ul>
           <li><h4>Turn Your Passion Into a Business</h4></li>
-          <li><a href="#">Open a Shop</a></li>
+          <li><button type="submit">Open a Shop</button></li>
         </ul>
         <ul>
           <li><h4>Sell on Etsy</h4></li>
-          <li>
-            <a href="#">Open a Shop</a>
-          </li>
           <li><a href="#">Seller Handbook</a></li>
           <li><a href="#">Etsy Credit Card Reader</a></li>
         </ul>
@@ -231,8 +223,7 @@
         <ul>
           <li>
             <a href="#">
-              <span></span>
-              United States
+              <span>United States</span>
             </a>
           </li>
           <li>
@@ -246,10 +237,12 @@
               <span>USD</span>
             </a>
           </li>
+            <a href="#">
+              <span>Help</span>
+            </a>
         </ul>
-        <a href="#" class="help-link">Help</a>
       </div>
-      <div class="footer links">
+      <div class="footer-links">
         <ul>
           <li>
             © 2015 Etsy, Inc.
