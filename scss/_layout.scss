@@ -36,8 +36,8 @@ header {
     display: block;
   }
 
-  nav {
-    @include span-columns(5);
+  .nav {
+    @include span-columns(6);
     display: block;
     float: right;
   }
@@ -55,6 +55,7 @@ aside {
 }
 
 /************ Items */
+
 .content {
   @include span-columns(9) ;
   @include omega();
@@ -65,15 +66,40 @@ aside {
     margin: 20px 14px 0 0;
   }
 
+/************ related */
+.related {
+  @include span-columns(9 of 12);
+  @include shift(3);
+  display: inline-block;
+}
+.col-1, .col-2, .col-3 {
+  @include span-columns(2 of 9);
+}
+.looking {
+  @include span-columns(9);
+  @include shift(3);
+}
+.pagination {
+  @include span-columns(9);
+  @include shift(3);
+  display: table;
+}
+
 /************ Subscribe */
 .subscribe {
   @include span-columns(12);
 }
 /************ Links */
 
+.links {
+  @include span-columns(11 of 12);
+  @include shift(1);
+}
+
 .sell, .join, .shopping, .know, .follow, {
   @include span-columns(2 of 12);
 }
+
 
 /************ Footer */
 footer {
@@ -83,7 +109,7 @@ footer {
 
   .help {
     @include span-columns(4 of 12);
-    @include shift (4);
+    @include shift(4);
   }
 
   .footer.links {

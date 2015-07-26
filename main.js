@@ -26,7 +26,9 @@ var buildItem = function(item){
       image = image.url_170x135;
 
   var imgUrl = item.url;
-  var title = item.title.substring(0,32) + '...';
+  var titleUrl = item.url;
+  var title = item.title.substring(0,34) + '...';
+  var shopUrl = item.Shop.url;
   var shop = item.Shop.shop_name;
   var price = item.price;
   var currency= item.currency_code;
@@ -37,7 +39,9 @@ var buildItem = function(item){
     {
       image: image,
       imgUrl: imgUrl,
+      titleUrl: titleUrl,
       title: title,
+      shopUrl: shopUrl,
       shop: shop,
       price: price,
       currency: currency,
