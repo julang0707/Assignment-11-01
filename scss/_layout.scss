@@ -3,7 +3,7 @@
   @include row();
 
   .inner {
-    @include outer-container(1000px);
+    @include outer-container(1100px);
   }
 }
 

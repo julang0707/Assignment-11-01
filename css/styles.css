@@ -567,7 +567,7 @@ picture {
     content: "";
     display: table; }
   .row-wrapper .inner {
-    max-width: 1000px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto; }
     .row-wrapper .inner::after {
@@ -843,15 +843,88 @@ header {
   border-bottom-color: #CBCCC9;
   margin: 0 0 24px;
   padding: 12px; }
-  .sidebar .panal .item-type .srchBts input {
-    margin: 0; }
-  .sidebar .panal .item-type .srchBts a {
-    font-size: 13px;
-    color: #0292B5;
-    padding: 0;
-    font-weight: normal; }
-    .sidebar .panal .item-type .srchBts a:hover {
-      text-decoration: underline; }
+  .sidebar .panal .item-type {
+    border-bottom: 1px solid #E1E3DF;
+    padding-bottom: 18px;
+    margin-bottom: 18px; }
+    .sidebar .panal .item-type a {
+      font-size: 13px;
+      color: #0292B5;
+      padding: 0;
+      font-weight: normal; }
+      .sidebar .panal .item-type a:hover {
+        text-decoration: underline; }
+  .sidebar .panal .price {
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #E1E3DF; }
+    .sidebar .panal .price div {
+      display: inline-block; }
+      .sidebar .panal .price div input {
+        width: 75px;
+        height: 37px;
+        display: inline-block; }
+      .sidebar .panal .price div p {
+        font-size: 14px; }
+    .sidebar .panal .price #submit {
+      position: relative;
+      background: transparent;
+      border: 1px solid #E1E3DF;
+      width: 35px;
+      height: 35px; }
+  .sidebar .panal .type {
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #E1E3DF; }
+    .sidebar .panal .type .color div {
+      border: 1px solid #e2e2e2;
+      border-radius: 3px;
+      height: 22px;
+      width: 22px; }
+    .sidebar .panal .type .color li {
+      display: inline-block; }
+    .sidebar .panal .type .color #red {
+      background-color: #f40b32; }
+    .sidebar .panal .type .color #orange {
+      background-color: #ff7f00; }
+    .sidebar .panal .type .color #yellow {
+      background-color: #f3cc0c; }
+    .sidebar .panal .type .color #green {
+      background-color: #0ac20a; }
+    .sidebar .panal .type .color #blue {
+      background-color: #0cccf3; }
+    .sidebar .panal .type .color #purple {
+      background-color: #a60cf3; }
+    .sidebar .panal .type .color #black {
+      background-color: #000; }
+  .sidebar .panal .ordering {
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #E1E3DF; }
+    .sidebar .panal .ordering a {
+      font-size: 13px;
+      color: #0292b5; }
+      .sidebar .panal .ordering a:hover {
+        text-decoration: underline; }
+  .sidebar .panal .location {
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #E1E3DF; }
+    .sidebar .panal .location a {
+      font-size: 13px;
+      color: #0292b5; }
+      .sidebar .panal .location a:hover {
+        text-decoration: underline; }
+  .sidebar .panal .ship select {
+    width: 100%;
+    font-size: 14px;
+    background: transparent;
+    line-height: 1;
+    border: 1px solid #E1E3DF;
+    border-radius: 3px;
+    height: 34px;
+    -webkit-appearance: none;
+    padding: 10px; }
 
 .item {
   border: 1px solid #000;
@@ -872,5 +945,59 @@ header {
     float: right;
     color: #78c042;
     margin: 0; }
+
+nav {
+  margin: 50px 50px 0;
+  display: inline-block;
+  width: 90%;
+  padding: 30px; }
+
+.links {
+  font-size: 13px;
+  color: #333333;
+  border-bottom: 1px solid #E1E3DF; }
+  .links section {
+    width: 185px;
+    margin: 0; }
+  .links h4 {
+    font-weight: 200;
+    margin-bottom: 5px; }
+  .links button {
+    width: 100px;
+    padding: 0;
+    height: 25px;
+    font-weight: normal;
+    background-color: #66B7D0; }
+  .links a {
+    color: #0292b5;
+    line-height: 25px;
+    font-weight: 500; }
+    .links a:hover {
+      text-decoration: underline; }
+
+footer {
+  margin-top: 15px;
+  display: inline-block; }
+  footer .help {
+    width: 90%; }
+    footer .help li {
+      display: inline-block;
+      text-align: center;
+      border: 1px solid #E1E3DF;
+      border-radius: 3px;
+      margin: 0 -3px;
+      padding: 5px 10px; }
+    footer .help a {
+      font-size: 13px;
+      color: #555555; }
+      footer .help a:hover {
+        color: #0292b5; }
+    footer .help a:nth-child(4) {
+      border: 1px solid #E1E3DF;
+      border-radius: 3px;
+      padding: 8px 45px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: 25px; }
 
 /*# sourceMappingURL=styles.css.map */
