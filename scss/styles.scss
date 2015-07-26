@@ -99,7 +99,7 @@ header {
     }
   }
   .nav {
-    display: inline-block;
+    height: auto;
     ul{
       float: right;
       overflow: auto;
@@ -108,11 +108,15 @@ header {
       list-style: none;
       display: inline-block;
       float: left;
-      margin: 0 10px 0 0;
+      margin: 0 19px 0 0;
 
       .register{
         color: #0192B5;
         text-decoration: none;
+        font-size: .9em;
+      }
+      .register:hover {
+        text-decoration: underline;
       }
       .sign-up {
         height: auto;
@@ -126,8 +130,28 @@ header {
         border-radius: 3px;
         box-sizing: border-box;
         color: #0192B5;
+        font-size: .9em;
+      }
+      .sign-up:hover {
+        background: #F0FBFD;
       }
     }
+
+    li:last-child {
+      height: auto;
+
+    span {
+      display: block;
+    }
+    a {
+      text-decoration: none;
+      color: #666666;
+      font-size: .9em;
+    }
+    a:hover {
+      color: #000;
+    }
+  }
   }
 }
 
@@ -588,10 +612,9 @@ footer{
   margin-top: 5px;
   display: inline-block;
   border-top: 1px solid #E1E3DF;
+  padding: 22px 0 28px 0;
   .help{
-    width: 90%;
-    margin-bottom: 10px;
-    margin-left: 35%;
+    margin-bottom: 15px;
     li{
       display: inline-block;
       text-align: center;
@@ -618,7 +641,6 @@ footer{
   }
 }
 .footer-links{
-  margin-left: 35%;
   font-size: 12px;
   li{
     display: inline-block;
@@ -626,7 +648,10 @@ footer{
     padding-right: 10px;
     color: #989898;
   }
-  a{
+  li:first-child {
+    font-weight: bold;
+  }
+  a {
     color: #555555;
     &:hover{
       text-decoration: underline;

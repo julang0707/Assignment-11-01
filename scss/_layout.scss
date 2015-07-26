@@ -7,6 +7,11 @@
   }
 }
 
+/************ Body */
+body {
+  @include span-columns(12);
+}
+
 /************ Header */
 header {
   @include span-columns(12);
@@ -104,16 +109,14 @@ aside {
 /************ Footer */
 footer {
   @include span-columns(12) ;
-  height: 72px;
-  padding: 10px;
 
   .help {
-    @include span-columns(4 of 12);
+    @include span-columns(5 of 12);
     @include shift(4);
   }
 
-  .footer.links {
-    @include span-columns(4 of 12);
+  .footer-links {
+    @include span-columns(5 of 12);
     @include shift (4);
   }
 }
