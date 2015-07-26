@@ -1171,12 +1171,6 @@ p.sort-by {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
     margin: 0 0 0 10px; }
 
-.links nav {
-  margin: 50px 50px 0;
-  display: inline-block;
-  width: 90%;
-  padding: 30px; }
-
 .links {
   font-size: 13px;
   color: #333333; }
@@ -1202,8 +1196,11 @@ footer {
   margin-top: 15px;
   display: inline-block;
   border-top: 1px solid #E1E3DF; }
+
   footer .help {
-    width: 90%; }
+    width: 90%;
+    margin-bottom: 10px;
+    margin-left: 35%; }
     footer .help li {
       display: inline-block;
       text-align: center;
@@ -1223,5 +1220,18 @@ footer {
       font-size: 16px;
       font-weight: bold;
       margin-left: 25px; }
+
+.footer-links {
+  margin-left: 35%;
+  font-size: 12px; }
+  .footer-links li {
+    display: inline-block;
+    position: relative;
+    padding-right: 10px;
+    color: #989898; }
+  .footer-links a {
+    color: #555555; }
+    .footer-links a:hover {
+      text-decoration: underline; }
 
 /*# sourceMappingURL=styles.css.map */
