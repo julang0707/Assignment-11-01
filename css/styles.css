@@ -663,6 +663,44 @@ aside {
   .item:last-child {
     margin-right: 0; }
 
+/************ related */
+.related {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 74.46809%;
+  margin-left: 25.53191%;
+  display: inline-block; }
+  .related:last-child {
+    margin-right: 0; }
+
+.col-1, .col-2, .col-3 {
+  float: left;
+  display: block;
+  margin-right: 2.85714%;
+  width: 20%; }
+  .col-1:last-child, .col-2:last-child, .col-3:last-child {
+    margin-right: 0; }
+
+.looking {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 74.46809%;
+  margin-left: 25.53191%; }
+  .looking:last-child {
+    margin-right: 0; }
+
+.pagination {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 74.46809%;
+  margin-left: 25.53191%;
+  display: table; }
+  .pagination:last-child {
+    margin-right: 0; }
+
 /************ Subscribe */
 .subscribe {
   float: left;
@@ -677,7 +715,8 @@ aside {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 100%; }
+  width: 91.48936%;
+  margin-left: 8.51064%; }
   .links:last-child {
     margin-right: 0; }
 
@@ -685,8 +724,7 @@ aside {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 16.59574%;
-  margin-left: 8.51064%; }
+  width: 14.89362%; }
   .sell:last-child, .join:last-child, .shopping:last-child, .know:last-child, .follow:last-child {
     margin-right: 0; }
 
@@ -965,7 +1003,7 @@ p.sort-by {
     color: #0192B5; }
 
 .content {
-  padding: 9px 0 35px 0;
+  padding: 9px 0 0px 0;
   overflow: auto; }
 
 .item {
@@ -1009,8 +1047,77 @@ p.sort-by {
     font-weight: bold;
     padding: 0 5px 0 0; }
 
+.related h5 {
+  font-size: .8em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0; }
+.related span {
+  font-size: .8em; }
+.related a {
+  text-decoration: none;
+  color: #0192B5;
+  font-weight: bold;
+  font-size: .8em; }
+.related a:hover {
+  text-decoration: underline; }
+
+.looking {
+  padding: 10px 0; }
+  .looking span {
+    font-size: .8em; }
+  .looking a {
+    text-decoration: none;
+    color: #0192B5;
+    font-weight: bold;
+    font-size: .8em; }
+  .looking a:hover {
+    text-decoration: underline; }
+
+.pagination {
+  padding: 5px 0 25px 0; }
+  .pagination .btn-icon {
+    display: inline-block;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 38px;
+    line-height: 1.4;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-right: none;
+    white-space: nowrap;
+    background: #fff; }
+  .pagination .selected {
+    background-color: #E1E3DF;
+    border-color: rgba(0, 0, 0, 0.25);
+    border-right: 1px solid rgba(0, 0, 0, 0.15); }
+  .pagination .disabled {
+    background-color: #F5F5F1;
+    border-color: rgba(0, 0, 0, 0.25);
+    border-right: 1px solid rgba(0, 0, 0, 0.15); }
+  .pagination .btn-icon:first-child {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin-left: 0;
+    background-color: #F5F5F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    color: #AAA; }
+  .pagination .btn-icon:last-child {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    margin-left: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.15); }
+  .pagination a {
+    text-decoration: none;
+    color: #000; }
+  .pagination a:hover {
+    background-color: #F5F5F1; }
+
 .subscribe {
-  padding: 8px 8px 10px 8px;
+  padding: 20px 0;
   border-radius: 0px;
   margin-bottom: 0px;
   border-bottom: 1px solid #E2E2E2;
@@ -1019,7 +1126,7 @@ p.sort-by {
   display: inline;
   width: 100%; }
   .subscribe p {
-    font-size: .9em;
+    font-size: .8em;
     margin: 0;
     padding-bottom: 10px; }
   .subscribe input {
@@ -1034,6 +1141,7 @@ p.sort-by {
     vertical-align: middle;
     white-space: nowrap;
     width: 250px;
+    height: 38px;
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     box-shadow: inset 0 1px 2px #E9E9E8,0 0 0 1000px #fbfbfa inset;
@@ -1071,11 +1179,7 @@ p.sort-by {
 
 .links {
   font-size: 13px;
-  color: #333333;
-  border-bottom: 1px solid #E1E3DF; }
-  .links section {
-    width: 185px;
-    margin: 0; }
+  color: #333333; }
   .links h4 {
     font-weight: 200;
     margin-bottom: 5px; }
@@ -1083,18 +1187,21 @@ p.sort-by {
     width: 100px;
     padding: 0;
     height: 25px;
-    font-weight: normal;
-    background-color: #66B7D0; }
+    font-weight: bold;
+    background-color: #66B7D0;
+    border-radius: 3px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15); }
   .links a {
     color: #0292b5;
     line-height: 25px;
-    font-weight: 500; }
+    font-weight: bold; }
     .links a:hover {
       text-decoration: underline; }
 
 footer {
   margin-top: 15px;
-  display: inline-block; }
+  display: inline-block;
+  border-top: 1px solid #E1E3DF; }
   footer .help {
     width: 90%; }
     footer .help li {
