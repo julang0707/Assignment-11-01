@@ -332,3 +332,68 @@ header {
     margin: 0;
   }
 }
+
+nav{
+  margin: 50px 50px 0;
+  display: inline-block;
+  width: 90%;
+  padding: 30px;
+}
+  .links{
+    font-size: 13px;
+    color: #333333;
+    border-bottom: 1px solid #E1E3DF;
+    section{
+      width: 185px;
+      margin: 0;
+    }
+    h4{
+      font-weight: 200;
+      margin-bottom: 5px;
+    }
+    button{
+      width: 100px;
+      padding: 0;
+      height: 25px;
+      font-weight: normal;
+      background-color: #66B7D0;
+    }
+    a{
+      color: #0292b5;
+      line-height: 25px;
+      font-weight: 500;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+footer{
+  margin-top: 15px;
+  display: inline-block;
+  .help{
+    width: 90%;
+    li{
+      display: inline-block;
+      text-align: center;
+      border: 1px solid #E1E3DF;
+      border-radius: 3px;
+      margin: 0 -3px;
+      padding: 5px 10px;
+    }
+    a{
+      font-size: 13px;
+      color: #555555;
+      &:hover{
+        color:#0292b5;
+      }
+    }
+    a:nth-child(4){
+      border: 1px solid #E1E3DF;
+      border-radius: 3px;
+      padding: 8px 45px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: 25px;
+    }
+  }
+}
