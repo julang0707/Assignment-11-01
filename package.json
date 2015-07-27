@@ -1,0 +1,30 @@
+{
+  "name": "etsy-search-page",
+  "version": "1.0.0",
+  "description": "Recreate Etsy search page",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julang0707/Assignment-11-01.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julang0707/Assignment-11-01/issues"
+  },
+  "homepage": "https://github.com/julang0707/Assignment-11-01#readme",
+  "dependencies": {
+    "babel": "^5.8.9",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-sass": "^2.0.4",
+    "jscs": "^1.13.1",
+    "jshint": "^2.8.0",
+    "sass": "^0.5.0"
+  }
+}
