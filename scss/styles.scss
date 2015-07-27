@@ -86,17 +86,6 @@ header {
     display: block;
     width: auto;
     text-decoration: none;
-
-    .browse::after {
-      content: '▾';
-      color: #bbb;
-      font-size: 8px;
-      line-height: 1em;
-      position: relative;
-      top: 0;
-      left: 3px;
-      margin: 0 1px;
-    }
   }
   .nav {
     height: auto;
@@ -140,18 +129,18 @@ header {
     li:last-child {
       height: auto;
 
-    span {
-      display: block;
+      span {
+        display: block;
+      }
+      a {
+        text-decoration: none;
+        color: #666666;
+        font-size: .9em;
+      }
+      a:hover {
+        color: #000;
+      }
     }
-    a {
-      text-decoration: none;
-      color: #666666;
-      font-size: .9em;
-    }
-    a:hover {
-      color: #000;
-    }
-  }
   }
 }
 
